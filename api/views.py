@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status
 
-openai_api_key = "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"
+openai_api_key = "Need to change here"
 
 
 class LLMProxyView(APIView):
