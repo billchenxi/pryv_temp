@@ -1,0 +1,51 @@
+# Virtual environment
+venv/
+env/
+
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Django/migrations (optional, you may want to commit these)
+**/migrations/
+
+# Logs
+*.log
+logs/
+debug.log
+*.sqlite3
+
+# Secrets and Environment Variables
+.env
+*.pem
+config/settings_local.py
+
+# Database
+db.sqlite3
+*.db
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Compiled files
+*.out
+*.o
+*.so
+
+# Coverage and Testing
+htmlcov/
+.coverage
+.cache
+pytest_cache/
+
+# Docker
+docker-compose.override.yml
+
+# MacOS & Windows OS Files
+.DS_Store
+Thumbs.db
