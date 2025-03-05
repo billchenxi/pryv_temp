@@ -33,7 +33,7 @@ export OPENAI_API_KEY='your-secret-key'
 SECRET_KEY = "django-insecure-$#7*=-5yxi)$r!y^thv8l^l(bbrbxz#7b0fr4_n^#q2(m36cf1"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = ["*"]
@@ -51,11 +51,6 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework_simplejwt",
     "api",
-]
-
-INSTALLED_APPS = [
-    "rest_framework",
-    "rest_framework_simplejwt",
 ]
 
 REST_FRAMEWORK = {
