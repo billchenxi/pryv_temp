@@ -5,9 +5,13 @@ import requests
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status
+from rest_framework.permissions import AllowAny
+from rest_framework.authentication import BasicAuthentication, SessionAuthentication
 
 
 class LLMProxyView(APIView):
+    authentication_classes = []  # Disable Django authentication
+    permission_classes = [AllowAny]  # Allow all requests
     def post(self, request):
         query = request.data.get("message")
         model_name = request.data.get("model", "gpt-3.5-turbo")
