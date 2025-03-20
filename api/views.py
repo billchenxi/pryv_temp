@@ -39,8 +39,8 @@ class LLMProxyView(APIView):
                 "gpt-3.5-turbo",
                 "gpt-4",
                 "gpt-4o",
-                # "gpt-4.5", #not available yet
-                # "o1", # too expensive and slow
+                "gpt-4.5-preview",  # not available yet
+                "o1",  # too expensive and slow
                 "o3-mini",
                 "o1-mini",
             ]:
